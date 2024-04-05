@@ -24,4 +24,10 @@ use Illuminate\Support\Facades\Route;
 // dd('tes api');
 // });
 
-Route::get('category', [CategoryController::class, 'index']);
+// Route::get('category', [CategoryController::class, 'index']);
+// Route::post('category', [CategoryController::class, 'store']);
+// Route::get('category/{id}', [CategoryController::class, 'show']);
+// Route::put('category/{id}', [CategoryController::class, 'update']);
+// Route::delete('category/{id}', [CategoryController::class, 'destroy']);
+
+Route::apiResource('category', CategoryController::class);
