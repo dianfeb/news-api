@@ -1,8 +1,10 @@
 <?php
 
-use App\Http\Controllers\Api\CategoryController;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\UserController;
+use App\Http\Controllers\Api\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +33,5 @@ use Illuminate\Support\Facades\Route;
 // Route::delete('category/{id}', [CategoryController::class, 'destroy']);
 
 Route::apiResource('category', CategoryController::class);
+
+Route::apiResource('user', UserController::class);
